@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap');
+
+:root{
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+}
+
+body{
+    margin: 0;
+    background-image: url(/images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: hsl(257, 40%, 49%);
+    color: #FFFFFF;
+}
+
+.main-container{
+    padding: 40px 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section1 .logo-huddle{
+    width: 50%;
+    margin-bottom: 50px;
+}
+
+.section1 .mockup{
+    width: 100%;
+}
+
+.section2{
+    text-align: center;
+}
+
+.section2--title{
+    font-family: "Poppins", sans-serif;
+}
+
+.section2--description{
+    font-weight: 400;
+}
+
+.section2 .boton{
+    width: 200px;   
+    height: 55px;
+    border-radius: 30px;
+    margin-top: 10px;
+    color: hsl(257, 40%, 49%);
+    background-color: #FFFFFF;
+    font-size: 1.5em;
+    border: none;
+    box-shadow: 0 5px 20px hsl(257, 41%, 28%);
+}
+
+.section2 .boton:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.section2 .boton:active{
+    color: #FFFFFF;
+    background-color: hsl(300, 69%, 71%);
+}
+
+.social-container{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 50px;
+}
+
+.img-container{
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border: 1px solid #FFFFFF;
+    border-radius: 50%;
+}
+
+.img-container:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+.img-container img{
+    width: 50%;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a{
+    color: #f3aeae;
+    text-decoration: none;
+}
+
+@media screen and (width > 740px) {
+    body{
+        background-image: url(/images/bg-desktop.svg);
+        background-size: 85%;
+    }
+
+    .main-container{
+        flex-direction: row;
+        gap: 60px;
+    }
+
+    .section1{
+        width: 130%;
+    }
+
+    .section1 .logo-huddle{
+        width: 35%;
+    }
+
+    .section2{
+        padding-top: 70px;
+        text-align: left;
+    }
+
+    .section2--title{
+        font-size: 3em;
+    }
+
+    .section2--description{
+        font-size: 1.2em;
+        margin-right: 50px;
+    }
+
+    .social-container{
+        justify-content: end;
+        margin: 80px 50px 0 0;
+    }
+}
+
+@media screen and (width > 1500px) {
+    .section2{
+        padding-top: 150px;
+    }
+
+    .social-container{
+        margin: 300px 50px 0 0;
+    }
+}
